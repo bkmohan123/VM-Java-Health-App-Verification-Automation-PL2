@@ -16,9 +16,16 @@
     <classes>
       <class name="testcases.verification_testcase">
         <methods>
+          <include name="verifyVerificationPageUrl"/>
+          <include name="verifyVerificationSubModules"/>
           <include name="verifyResultDataIsAsPerTheSelectedDateRange"/>
+          <include name="verifyToolTipText"/>
           <include name="tearDown"/>
+          <include name="verifyInventoryTabsAndButtonsAreDisplayed"/>
           <include name="initBrowser"/>
+          <include name="verifyDatesAreRemeberedCorrectly"/>
+          <include name="verifyPharmacyTabIsActiveOrNot"/>
+          <include name="verifyNavigationOfTabs"/>
         </methods>
       </class> <!-- testcases.verification_testcase -->
     </classes>
