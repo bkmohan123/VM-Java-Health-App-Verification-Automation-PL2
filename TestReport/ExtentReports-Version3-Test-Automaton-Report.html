@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 3, 2026 02:50:21 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 3, 2026 02:58:00 PM</span>
 				</a>
 			</li>
 			<li>
@@ -125,14 +125,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyVerificationPageUrl</span>
-						<span class='test-time'>Mar 3, 2026 02:50:39 PM</span>
+						<span class='test-time'>Mar 3, 2026 02:58:15 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2026 02:50:39 PM</span>
-	<span class='label end-time'>Mar 3, 2026 02:51:31 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 51s+559ms</span>
+	<span class='label start-time'>Mar 3, 2026 02:58:15 PM</span>
+	<span class='label end-time'>Mar 3, 2026 02:58:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 33s+347ms</span>
 </div>
 	<div class='test-desc'>Precondition: User should be logged in and on the healthapp section
 1. Login in the healthapp application
@@ -150,23 +150,27 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>2:51:31 PM</td>
-					<td class='step-details'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : failed to get the data.. please check log for details.}
-  (Session info: chrome=145.0.7632.117): failed to get the data.. please check log for details.
+					<td class='timestamp'>2:58:48 PM</td>
+					<td class='step-details'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : undefined}
+  (Session info: chrome=145.0.7632.117): undefined
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc0bd092c4637b82bb60e9cb4fa300e8, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=f.714D407B59172DA07970D4B2B5B069AD.d.FC8AA53F9DAC4AF2F0D29014B104F384.e.47}]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63027}, goog:processID: 15700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63027/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
+Command: [4d45f7b75058edea52ffb4e268bbdef1, findElement {using=xpath, value=//a[@href='#/Verification']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65432}, goog:processID: 27484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65432/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d45f7b75058edea52ffb4e268bbdef1
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
-	at pages.verification_page.scrollDownAndClickVerificationTab(verification_page.java:133)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at coreUtilities.utils.CommonEvents.findElement(CommonEvents.java:142)
+	at pages.verification_page.scrollDownAndClickVerificationTab(verification_page.java:132)
 	at testcases.verification_testcase.verifyVerificationPageUrl(verification_testcase.java:61)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -195,14 +199,14 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyVerificationSubModules</span>
-						<span class='test-time'>Mar 3, 2026 02:51:31 PM</span>
+						<span class='test-time'>Mar 3, 2026 02:58:48 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2026 02:51:31 PM</span>
-	<span class='label end-time'>Mar 3, 2026 02:52:20 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 49s+396ms</span>
+	<span class='label start-time'>Mar 3, 2026 02:58:48 PM</span>
+	<span class='label end-time'>Mar 3, 2026 02:58:49 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+557ms</span>
 </div>
 	<div class='test-desc'>Precondition: User should be logged in and on the Verification section\n"
 	+ "1. Click on the Verification Module drop-down arrow\n"
@@ -219,7 +223,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>2:52:20 PM</td>
+					<td class='timestamp'>2:58:49 PM</td>
 					<td class='step-details'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -253,14 +257,14 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyInventoryTabsAndButtonsAreDisplayed</span>
-						<span class='test-time'>Mar 3, 2026 02:52:20 PM</span>
+						<span class='test-time'>Mar 3, 2026 02:58:49 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2026 02:52:20 PM</span>
-	<span class='label end-time'>Mar 3, 2026 02:52:51 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+512ms</span>
+	<span class='label start-time'>Mar 3, 2026 02:58:49 PM</span>
+	<span class='label end-time'>Mar 3, 2026 02:58:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+720ms</span>
 </div>
 	<div class='test-desc'>Precondition: User should be logged in and on the Verification section\n"
 	+ "1. Click on the Verification Module drop-down arrow\n"
@@ -277,7 +281,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>2:52:51 PM</td>
+					<td class='timestamp'>2:58:50 PM</td>
 					<td class='step-details'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -311,14 +315,14 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyPharmacyTabIsActiveOrNot</span>
-						<span class='test-time'>Mar 3, 2026 02:52:51 PM</span>
+						<span class='test-time'>Mar 3, 2026 02:58:50 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2026 02:52:51 PM</span>
-	<span class='label end-time'>Mar 3, 2026 02:53:21 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+569ms</span>
+	<span class='label start-time'>Mar 3, 2026 02:58:50 PM</span>
+	<span class='label end-time'>Mar 3, 2026 02:59:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 40s+450ms</span>
 </div>
 	<div class='test-desc'>Pre condition: User should be logged in and it is on verification module
 1. Click on the inventory  
@@ -336,7 +340,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>2:53:21 PM</td>
+					<td class='timestamp'>2:59:30 PM</td>
 					<td class='step-details'><pre>java.lang.AssertionError: Pharmacy page is not active expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -369,14 +373,14 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyNavigationOfTabs</span>
-						<span class='test-time'>Mar 3, 2026 02:53:21 PM</span>
+						<span class='test-time'>Mar 3, 2026 02:59:30 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2026 02:53:21 PM</span>
-	<span class='label end-time'>Mar 3, 2026 02:53:52 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+528ms</span>
+	<span class='label start-time'>Mar 3, 2026 02:59:30 PM</span>
+	<span class='label end-time'>Mar 3, 2026 03:00:01 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+247ms</span>
 </div>
 	<div class='test-desc'>Pre condition: User should be logged in and it is on verification module
 1. Click on the inventory  
@@ -394,7 +398,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>2:53:52 PM</td>
+					<td class='timestamp'>3:00:01 PM</td>
 					<td class='step-details'><pre>java.lang.AssertionError: Purchase Request Tab is not active expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -427,14 +431,14 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyTheResultsDateRangeIsWithinTheSelectedRange</span>
-						<span class='test-time'>Mar 3, 2026 02:53:52 PM</span>
+						<span class='test-time'>Mar 3, 2026 03:00:01 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2026 02:53:52 PM</span>
-	<span class='label end-time'>Mar 3, 2026 02:54:22 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+86ms</span>
+	<span class='label start-time'>Mar 3, 2026 03:00:01 PM</span>
+	<span class='label end-time'>Mar 3, 2026 03:00:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+133ms</span>
 </div>
 	<div class='test-desc'>Pre condition: User should be logged in and it is on Requisition section1. Click on the "From" date2. Select the "From" date3. Click on the "To" date4. Select "To" date5. Click on "OK" button </div>
 	<div class='test-steps'>
@@ -449,7 +453,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>2:54:22 PM</td>
+					<td class='timestamp'>3:00:31 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -462,14 +466,14 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyToolTipText</span>
-						<span class='test-time'>Mar 3, 2026 02:54:23 PM</span>
+						<span class='test-time'>Mar 3, 2026 03:00:38 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2026 02:54:23 PM</span>
-	<span class='label end-time'>Mar 3, 2026 02:54:54 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+736ms</span>
+	<span class='label start-time'>Mar 3, 2026 03:00:38 PM</span>
+	<span class='label end-time'>Mar 3, 2026 03:01:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+272ms</span>
 </div>
 	<div class='test-desc'>Pre condition: User should be logged in and it is on Inventory > Requisition section 
 1. Hover the mouse over the star/favourite icon. 
@@ -486,16 +490,16 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>2:54:54 PM</td>
+					<td class='timestamp'>3:01:10 PM</td>
 					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//i[contains(@class,'icon-favourite')]"}
   (Session info: chrome=145.0.7632.117)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc0bd092c4637b82bb60e9cb4fa300e8, findElement {using=xpath, value=//i[contains(@class,'icon-favourite')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63027}, goog:processID: 15700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63027/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
+Command: [4d45f7b75058edea52ffb4e268bbdef1, findElement {using=xpath, value=//i[contains(@class,'icon-favourite')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65432}, goog:processID: 27484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65432/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d45f7b75058edea52ffb4e268bbdef1
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -542,14 +546,14 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyDatesAreRemeberedCorrectly</span>
-						<span class='test-time'>Mar 3, 2026 02:54:54 PM</span>
+						<span class='test-time'>Mar 3, 2026 03:01:10 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2026 02:54:54 PM</span>
-	<span class='label end-time'>Mar 3, 2026 02:55:25 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+156ms</span>
+	<span class='label start-time'>Mar 3, 2026 03:01:10 PM</span>
+	<span class='label end-time'>Mar 3, 2026 03:01:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+317ms</span>
 </div>
 	<div class='test-desc'>Pre condition: User should be logged in and it is on Inventory > Requisition section 
 1. Hover the mouse over the star/favourite icon. 
@@ -566,16 +570,16 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>2:55:25 PM</td>
+					<td class='timestamp'>3:01:41 PM</td>
 					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@id='date'])[1]"}
   (Session info: chrome=145.0.7632.117)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc0bd092c4637b82bb60e9cb4fa300e8, findElement {using=xpath, value=(//input[@id='date'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63027}, goog:processID: 15700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63027/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
+Command: [4d45f7b75058edea52ffb4e268bbdef1, findElement {using=xpath, value=(//input[@id='date'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65432}, goog:processID: 27484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65432/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d45f7b75058edea52ffb4e268bbdef1
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -622,14 +626,14 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='9'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyResultDataIsAsPerTheSelectedDateRange</span>
-						<span class='test-time'>Mar 3, 2026 02:55:25 PM</span>
+						<span class='test-time'>Mar 3, 2026 03:01:41 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2026 02:55:25 PM</span>
-	<span class='label end-time'>Mar 3, 2026 02:56:25 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 0s+582ms</span>
+	<span class='label start-time'>Mar 3, 2026 03:01:41 PM</span>
+	<span class='label end-time'>Mar 3, 2026 03:03:01 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 19s+639ms</span>
 </div>
 	<div class='test-desc'>Pre condition: User should be logged in and it is on verification module
 1. Click on the data range button
@@ -647,16 +651,16 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>2:56:25 PM</td>
+					<td class='timestamp'>3:03:01 PM</td>
 					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"td [data-hover='dropdown']"}
   (Session info: chrome=145.0.7632.117)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc0bd092c4637b82bb60e9cb4fa300e8, findElement {using=css selector, value=td [data-hover='dropdown']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63027}, goog:processID: 15700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63027/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
+Command: [4d45f7b75058edea52ffb4e268bbdef1, findElement {using=css selector, value=td [data-hover='dropdown']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65432}, goog:processID: 27484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65432/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d45f7b75058edea52ffb4e268bbdef1
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -801,24 +805,28 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Mar 3, 2026 02:50:39 PM</td>
+                                                        <td>Mar 3, 2026 02:58:15 PM</td>
                                                         <td class='linked' test-id='1'>verifyVerificationPageUrl</td>
-                                                        <td><pre><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : failed to get the data.. please check log for details.}
-  (Session info: chrome=145.0.7632.117): failed to get the data.. please check log for details.
+                                                        <td><pre><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : undefined}
+  (Session info: chrome=145.0.7632.117): undefined
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc0bd092c4637b82bb60e9cb4fa300e8, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=f.714D407B59172DA07970D4B2B5B069AD.d.FC8AA53F9DAC4AF2F0D29014B104F384.e.47}]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63027}, goog:processID: 15700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63027/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
+Command: [4d45f7b75058edea52ffb4e268bbdef1, findElement {using=xpath, value=//a[@href='#/Verification']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65432}, goog:processID: 27484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65432/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d45f7b75058edea52ffb4e268bbdef1
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
-	at pages.verification_page.scrollDownAndClickVerificationTab(verification_page.java:133)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at coreUtilities.utils.CommonEvents.findElement(CommonEvents.java:142)
+	at pages.verification_page.scrollDownAndClickVerificationTab(verification_page.java:132)
 	at testcases.verification_testcase.verifyVerificationPageUrl(verification_testcase.java:61)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -859,7 +867,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Mar 3, 2026 02:51:31 PM</td>
+                                                        <td>Mar 3, 2026 02:58:48 PM</td>
                                                         <td class='linked' test-id='2'>verifyVerificationSubModules</td>
                                                         <td><pre><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
@@ -885,7 +893,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Mar 3, 2026 02:52:20 PM</td>
+                                                        <td>Mar 3, 2026 02:58:49 PM</td>
                                                         <td class='linked' test-id='3'>verifyInventoryTabsAndButtonsAreDisplayed</td>
                                                         <td><pre><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
@@ -911,7 +919,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Mar 3, 2026 02:52:51 PM</td>
+                                                        <td>Mar 3, 2026 02:58:50 PM</td>
                                                         <td class='linked' test-id='4'>verifyPharmacyTabIsActiveOrNot</td>
                                                         <td><pre><pre>java.lang.AssertionError: Pharmacy page is not active expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
@@ -936,7 +944,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Mar 3, 2026 02:53:21 PM</td>
+                                                        <td>Mar 3, 2026 02:59:30 PM</td>
                                                         <td class='linked' test-id='5'>verifyNavigationOfTabs</td>
                                                         <td><pre><pre>java.lang.AssertionError: Purchase Request Tab is not active expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
@@ -982,7 +990,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Mar 3, 2026 02:54:23 PM</td>
+                                                        <td>Mar 3, 2026 03:00:38 PM</td>
                                                         <td class='linked' test-id='7'>verifyToolTipText</td>
                                                         <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//i[contains(@class,'icon-favourite')]"}
   (Session info: chrome=145.0.7632.117)
@@ -990,9 +998,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc0bd092c4637b82bb60e9cb4fa300e8, findElement {using=xpath, value=//i[contains(@class,'icon-favourite')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63027}, goog:processID: 15700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63027/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
+Command: [4d45f7b75058edea52ffb4e268bbdef1, findElement {using=xpath, value=//i[contains(@class,'icon-favourite')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65432}, goog:processID: 27484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65432/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d45f7b75058edea52ffb4e268bbdef1
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1030,7 +1038,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Mar 3, 2026 02:54:54 PM</td>
+                                                        <td>Mar 3, 2026 03:01:10 PM</td>
                                                         <td class='linked' test-id='8'>verifyDatesAreRemeberedCorrectly</td>
                                                         <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@id='date'])[1]"}
   (Session info: chrome=145.0.7632.117)
@@ -1038,9 +1046,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc0bd092c4637b82bb60e9cb4fa300e8, findElement {using=xpath, value=(//input[@id='date'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63027}, goog:processID: 15700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63027/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
+Command: [4d45f7b75058edea52ffb4e268bbdef1, findElement {using=xpath, value=(//input[@id='date'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65432}, goog:processID: 27484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65432/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d45f7b75058edea52ffb4e268bbdef1
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1078,7 +1086,7 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Mar 3, 2026 02:55:25 PM</td>
+                                                        <td>Mar 3, 2026 03:01:41 PM</td>
                                                         <td class='linked' test-id='9'>verifyResultDataIsAsPerTheSelectedDateRange</td>
                                                         <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"td [data-hover='dropdown']"}
   (Session info: chrome=145.0.7632.117)
@@ -1086,9 +1094,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc0bd092c4637b82bb60e9cb4fa300e8, findElement {using=css selector, value=td [data-hover='dropdown']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63027}, goog:processID: 15700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63027/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
+Command: [4d45f7b75058edea52ffb4e268bbdef1, findElement {using=css selector, value=td [data-hover='dropdown']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ABHI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65432}, goog:processID: 27484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65432/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d45f7b75058edea52ffb4e268bbdef1
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1161,19 +1169,19 @@ Session ID: fc0bd092c4637b82bb60e9cb4fa300e8
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 3, 2026 02:50:21 PM</div>
+					<div class='panel-lead'>Mar 3, 2026 02:58:00 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 3, 2026 02:56:26 PM</div>
+			 		<div class='panel-lead'>Mar 3, 2026 03:03:02 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 6m 5s+236ms</div>
+					<div class='panel-lead'>0h 5m 1s+575ms</div>
 				</div>
 			</div>
 		</div>
